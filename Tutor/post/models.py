@@ -2,6 +2,7 @@ from time import timezone
 from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
+from django.urls import reverse
 
 # Create your models here.
 class Post(models.Model):
@@ -13,3 +14,9 @@ class Post(models.Model):
     #this returns how you want the post to be printed, this case by title
     def __str__(self):
         return self.title
+
+    #letting the view know where you want to redirect once you create a new post
+    def get_absolute_url(self):
+        return reverse('post-detail', kwargs={'pk': self.pk})   #redirecting to detail page
+
+    
