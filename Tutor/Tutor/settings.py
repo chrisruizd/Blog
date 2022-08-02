@@ -149,4 +149,4 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = os.environ.get('sender_mail')
 EMAIL_HOST_PASSWORD = os.environ.get('sender_pw')
 
-#'kxdfatjoswoejtsu'
+
