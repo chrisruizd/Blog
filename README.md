@@ -1,3 +1,3 @@
-# TutorMe
+# Blog
 
 Work in Progress
